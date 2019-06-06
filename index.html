@@ -32,9 +32,10 @@
 							<ul>
 								<li><a href="#about">About Me</a></li>
 								<li><a href="#projects">Projects</a></li>
-								<li><a href="#resume">Resume</a></li>
+								<!-- <li><a href="#graphics">Just Life</a></li> -->
+								<!-- <li><a href="#resume">Resume</a></li> -->
+								<li><a href="#notcode">Not Code</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<!-- <li><a href="#photography">Photography</a> --></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -48,7 +49,7 @@
 								<h2 class="major">About Me</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>I am a rising third year Computer Science major at Cal Poly, San Luis Obispo. I am currently working as a Junior Developer on the Kindle team at Amazon, San Luis Obispo.</p>
-								<p>I can comfortably code in C, Java, and Python and was a member of Cal Poly's Mech Warfare team. I am using my free time to explore HTML/CSS as well. I often thrive in areas where I’m constantly pushing boundaries to develop new technology and create something new. To explore those boundaries, I've completed a wide range of projects that you can check out in detail <a href="#projects">here</a>. </p>
+								<p>I can comfortably code in C, Java, and Python and was a member of Cal Poly's Mech Warfare team. I am using my free time to explore HTML/CSS as well. I often thrive in areas where I’m constantly pushing boundaries to develop new technology and create something new. To explore those boundaries, I've completed a wide range of projects that you can check out in detail <a href="#projects">here</a> (including those on my <a href="#resume">resume</a>). </p>
 								<p>Please feel free to <a href="#contact">contact me</a> with any questions or growth opportunities!</p>
 							</article>
 
@@ -67,9 +68,190 @@
 								<p></p>
 							</article>
 
+						<!-- Not Code -->
+							<article id="notcode">
+								<h2 class="major">Photography</h2>
+								<p>I've been taking graduation pictures for friends. I think it's one of the best gifts I can offer to those who have helped me so much along my college careeer - the gift of memories.</p>
+								<div class="slideshow-container">
+									<!-- Full-width images with number and caption text -->
+									<div class="mySlides fade">
+									  <div class="numbertext">1 / 6</div>
+									  <img src="images/IMG_0609.jpg" style="width:100%">
+									  <div class="text"></div>
+									</div>
+
+									<div class="mySlides fade">
+									  <div class="numbertext">2 / 6</div>
+									  <img src="images/IMG_0891.jpg" style="width:100%">
+									  <div class="text"></div>
+									</div>
+
+									<div class="mySlides fade">
+									  <div class="numbertext">3 / 6</div>
+									  <img src="images/IMG_0810.jpg" style="width:100%">
+									  <div class="text"></div>
+									</div>
+
+									<div class="mySlides fade">
+									  <div class="numbertext">4 / 6</div>
+									  <img src="images/IMG_0935.jpg" style="width:100%">
+									  <div class="text"></div>
+									</div>
+
+									<div class="mySlides fade">
+									  <div class="numbertext">5 / 6</div>
+									  <img src="images/IMG_0987.jpg" style="width:100%">
+									  <div class="text"></div>
+									</div>
+
+									<div class="mySlides fade">
+									  <div class="numbertext">6 / 6</div>
+									  <img src="images/IMG_0582.jpg" style="width:100%">
+									  <div class="text"></div>
+									</div>
+
+									<!-- Next and previous buttons -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+									<script>
+										var slideIndex = 1;
+										showSlides(slideIndex);
+
+										// Next/previous controls
+										function plusSlides(n) {
+										  showSlides(slideIndex += n);
+										}
+
+										// Thumbnail image controls
+										function currentSlide(n) {
+										  showSlides(slideIndex = n);
+										}
+
+										function showSlides(n) {
+										  var i;
+										  var slides = document.getElementsByClassName("mySlides");
+										  var dots = document.getElementsByClassName("dot");
+										  if (n > slides.length) {slideIndex = 1} 
+										  if (n < 1) {slideIndex = slides.length}
+										  for (i = 0; i < slides.length; i++) {
+										      slides[i].style.display = "none"; 
+										  }
+										  for (i = 0; i < dots.length; i++) {
+										      dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slides[slideIndex-1].style.display = "block"; 
+										  dots[slideIndex-1].className += " active";
+										}
+									</script>
+								</div>
+								<br>
+								<br>
+								<h2 class="major">Cooking</h2>
+								<p>Sometimes it's hard to find the things you like to eat wherever you go. I started cooking when I first came to college, and I'd argue that my culinary abilities have improved quite a bit since!</p>
+								<div class="slideshow-container">
+									<!-- Full-width images with number and caption text -->
+									<div class="cookingSlides fade">
+									  <div class="numbertext">1 / 10</div>
+									  <img src="images/IMG_2537.jpg" style="width:100%">
+									  <div class="text">Chicken Pho</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">2 / 10</div>
+									  <img src="images/IMG_2724.jpg" style="width:100%">
+									  <div class="text">Cinnamon Rolls</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">3 / 10</div>
+									  <img src="images/IMG_2725.jpg" style="width:100%">
+									  <div class="text">Japanese Chicken Karaage</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">4 / 10</div>
+									  <img src="images/IMG_2726.jpg" style="width:100%">
+									  <div class="text">Garlic Parmesan Potato Wedges</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">5 / 10</div>
+									  <img src="images/IMG_2727.jpg" style="width:100%">
+									  <div class="text">Tomato Egg Drop Soup</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">6 / 10</div>
+									  <img src="images/IMG_2728.jpg" style="width:100%">
+									  <div class="text">Banana Bread</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">7 / 10</div>
+									  <img src="images/IMG_2730.jpg" style="width:100%">
+									  <div class="text">Pork Belly Fried Rice</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">8 / 10</div>
+									  <img src="images/IMG_2732.jpg" style="width:100%">
+									  <div class="text">Steamed Tilapia</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">9 / 10</div>
+									  <img src="images/IMG_2729.jpg" style="width:100%">
+									  <div class="text">Tomato Pork Chops</div>
+									</div>
+
+									<div class="cookingSlides fade">
+									  <div class="numbertext">10 / 10</div>
+									  <img src="images/IMG_2733.jpg" style="width:100%">
+									  <div class="text">Braised Pork Belly with Pickled Cucumber and an Egg</div>
+									</div>
+
+									<!-- Next and previous buttons -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+									<script>
+										var slideIndex = 1;
+										showSlides(slideIndex);
+
+										// Next/previous controls
+										function plusSlides(n) {
+										  showSlides(slideIndex += n);
+										}
+
+										// Thumbnail image controls
+										function currentSlide(n) {
+										  showSlides(slideIndex = n);
+										}
+
+										function showSlides(n) {
+										  var i;
+										  var slides = document.getElementsByClassName("cookingSlides");
+										  var dots = document.getElementsByClassName("dot");
+										  if (n > slides.length) {slideIndex = 1} 
+										  if (n < 1) {slideIndex = slides.length}
+										  for (i = 0; i < slides.length; i++) {
+										      slides[i].style.display = "none"; 
+										  }
+										  for (i = 0; i < dots.length; i++) {
+										      dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slides[slideIndex-1].style.display = "block"; 
+										  dots[slideIndex-1].className += " active";
+										}
+									</script>
+								</div>
+								<br>
+							</article>
+
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
+								<h2 class="major">Contact Me!</h2>
 								<!-- <form method="post" action="/Users/jessm/OneDrive/Desktop/Resume/email.php">
 									<div class="fields">
 										<div class="field half">
@@ -92,8 +274,9 @@
 								</form> -->
 								<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/jessie-mok-5b57bb64/" class="icon fa fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<!-- <li><a href="https://www.facebook.com/jessmok108" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/jesssmok/" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<!-- <li><a href="https://www.facebook.com/jessmok108" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+									<!-- <li><a href="https://www.instagram.com/jessfooods/" class="icon 
+									fa-instagram"><span class="label">Instagram</span></a></li> -->
 									<li><a href="https://github.com/jessmok" class="icon fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="mailto:jwmok@calpoly.edu" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
