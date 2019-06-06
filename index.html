@@ -216,33 +216,33 @@
 									<a class="next" onclick="upSlides(1)">&#10095;</a>
 
 									<script>
-										var slideIndex = 1;
-										runSlides(slideIndex);
+										var index = 1;
+										runSlides(index);
 
 										// Next/previous controls
 										function upSlides(n) {
-										  runSlides(slideIndex += n);
+										  runSlides(index += n);
 										}
 
 										// Thumbnail image controls
 										function currSlide(n) {
-										  runSlides(slideIndex = n);
+										  runSlides(index = n);
 										}
 
 										function runSlides(n) {
 										  var i;
 										  var slides = document.getElementsByClassName("cookingSlides");
 										  var dots = document.getElementsByClassName("dot");
-										  if (n > slides.length) {slideIndex = 1} 
-										  if (n < 1) {slideIndex = slides.length}
+										  if (n > slides.length) {index = 1} 
+										  if (n < 1) {index = slides.length}
 										  for (i = 0; i < slides.length; i++) {
 										      slides[i].style.display = "none"; 
 										  }
 										  for (i = 0; i < dots.length; i++) {
 										      dots[i].className = dots[i].className.replace(" active", "");
 										  }
-										  slides[slideIndex-1].style.display = "block"; 
-										  dots[slideIndex-1].className += " active";
+										  slides[index-1].style.display = "block"; 
+										  dots[index-1].className += " active";
 										}
 									</script>
 								</div>
