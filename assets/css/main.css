@@ -1642,7 +1642,7 @@ input, select, textarea {
 
 	/* Slideshow container */
 	.slideshow-container {
-	  max-width: 600px;
+	  max-width: 1000px;
 	  position: relative;
 	  margin: 0 auto;
 	}
@@ -1652,13 +1652,13 @@ input, select, textarea {
   	margin: auto;
   	background-color: black;
   	overflow: hidden;
-  	height: 1000px;
+  	height: 600px;
 	}
 
 	#slideshow-container img{
   	display: block;
  	margin: 0 auto;
-  	height: 1000px;
+  	height: 600px;
   	width: 600px;
   	vertical-align: center;
   	position: absolute;
