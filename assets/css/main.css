@@ -25,6 +25,11 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+iframe{
+  width: 1px;
+  min-width: 100%;
+}
+
 video, img {
 		width: 100%;
 		height: auto;
